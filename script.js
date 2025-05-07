@@ -1,4 +1,3 @@
-
 const navLinks = document.querySelectorAll('nav ul li a');
 navLinks.forEach(link => {
     link.addEventListener('click', e => {
@@ -26,4 +25,9 @@ window.addEventListener('scroll', () => {
             });
         }
     });
+});
+
+
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('nav-links').classList.toggle('showing');
 });
